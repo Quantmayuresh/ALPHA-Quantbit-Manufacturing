@@ -206,6 +206,7 @@ class ComponentWorkOrder(Document):
 			doc = frappe.new_doc("Stock Entry")
 			doc.stock_entry_type = "Manufacture"
 			doc.company = self.company
+			doc.set_posting_time = True
 			doc.posting_date =self.posting_date
 			doc.append("items", {
 				"item_code": f.item_code,
@@ -241,6 +242,7 @@ class ComponentWorkOrder(Document):
 		doc = frappe.new_doc("Stock Entry")
 		doc.stock_entry_type = "Material Issue"
 		doc.company = self.company
+		doc.set_posting_time = True
 		doc.posting_date =self.posting_date
 		for i in self.get("scrap_items"):
 			doc.append("items", {

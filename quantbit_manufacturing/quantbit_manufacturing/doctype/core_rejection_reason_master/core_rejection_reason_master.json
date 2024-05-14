@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:reason",
+ "creation": "2024-05-09 18:58:30.389993",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "column_break_gvwit",
+  "column_break_ue4tr",
+  "section_break_ofssp",
+  "reason",
+  "column_break_pr64y",
+  "column_break_6vv48"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_gvwit",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ue4tr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ofssp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reason",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_pr64y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_6vv48",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-14 11:48:05.748580",
+ "modified_by": "Administrator",
+ "module": "Quantbit Manufacturing",
+ "name": "Core Rejection Reason Master",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

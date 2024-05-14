@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-11 15:43:13.048249",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "core_item_code",
+  "column_break_s5oyq",
+  "core_item_name",
+  "column_break_r96yy",
+  "core_rejection_reason",
+  "column_break_ikqjm",
+  "core_rejection_quantity",
+  "column_break_ipwdq",
+  "section_break_9z4ec",
+  "core_warehouse",
+  "column_break_qwz81",
+  "transaction_date",
+  "column_break_9isbx",
+  "column_break_37eca",
+  "column_break_i5795"
+ ],
+ "fields": [
+  {
+   "fieldname": "core_item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Core Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_s5oyq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "core_item_code.item_name",
+   "fieldname": "core_item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Core Item Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_r96yy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "core_rejection_reason",
+   "fieldtype": "Link",
+   "label": "Core Rejection Reason",
+   "options": "Core Rejection Reason Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ikqjm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "core_rejection_quantity",
+   "fieldtype": "Float",
+   "label": "Core Rejection Quantity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ipwdq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_9z4ec",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "core_warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qwz81",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "label": "Transaction Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9isbx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_37eca",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_i5795",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-14 11:47:37.841322",
+ "modified_by": "Administrator",
+ "module": "Quantbit Manufacturing",
+ "name": "Core Rejection Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

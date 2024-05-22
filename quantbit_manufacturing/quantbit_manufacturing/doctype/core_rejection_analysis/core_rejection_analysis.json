@@ -106,10 +106,9 @@
   },
   {
    "fieldname": "supervisor_id",
-   "fieldtype": "Link",
-   "label": "Supervisor Id",
-   "options": "Employee",
-   "reqd": 1
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Supervisor Id"
   },
   {
    "fieldname": "column_break_7lhru",
@@ -119,6 +118,7 @@
    "fetch_from": "supervisor_id.employee_name",
    "fieldname": "supervisor_name",
    "fieldtype": "Data",
+   "hidden": 1,
    "in_list_view": 1,
    "label": "Supervisor Name"
   },
@@ -128,10 +128,9 @@
   },
   {
    "fieldname": "operator_id",
-   "fieldtype": "Link",
-   "label": "Operator Id",
-   "options": "Employee",
-   "reqd": 1
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Operator Id"
   },
   {
    "fieldname": "column_break_sk3ns",
@@ -141,6 +140,7 @@
    "fetch_from": "operator_id.employee_name",
    "fieldname": "operator_name",
    "fieldtype": "Data",
+   "hidden": 1,
    "in_list_view": 1,
    "label": "Operator Name"
   },
@@ -177,7 +177,7 @@
    "link_fieldname": "custom_core_rejection_analysis"
   }
  ],
- "modified": "2024-05-13 17:33:35.279741",
+ "modified": "2024-05-16 14:50:30.148471",
  "modified_by": "Administrator",
  "module": "Quantbit Manufacturing",
  "name": "Core Rejection Analysis",

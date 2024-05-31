@@ -296,7 +296,7 @@ def get_columns(additional_table_columns, filters):
 			"options": "Cost Center",
 			"width": 100,
 		},
-		{"label": _("Stock Qty"), "fieldname": "stock_qty", "fieldtype": "Float", "width": 100},
+		{"label": _("Sales Qty"), "fieldname": "stock_qty", "fieldtype": "Float", "width": 100},
 		{"label": _("Weight"), "fieldname": "value_per_unit", "fieldtype": "Data", "width": 120},
 		{
 			"label": _("Stock UOM"),
